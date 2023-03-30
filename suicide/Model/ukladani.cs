@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace suicide.Model
 {
-    class user
+    internal class ukladani
     {
-        public user(int score)
-        {
-            this.score = score;
-        }
-    
-        public int score { get; set; }
     }
 }

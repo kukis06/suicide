@@ -12,7 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Data.SQLite;
 using System.Windows.Shapes;
+
 
 namespace suicide
 {
@@ -22,10 +24,12 @@ namespace suicide
     public partial class MainWindow : Window
     {
         int counter = 0;
+        private static object txtData;
+
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
         public void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +37,6 @@ namespace suicide
             counter++;
             pocet.Content = counter.ToString();
         }
-
 
     }
 }
