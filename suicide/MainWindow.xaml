@@ -33,6 +33,7 @@
             HorizontalContentAlignment="Center"/>
         
         <Button 
+            Background="DarkCyan"
             Content="Button" 
             HorizontalAlignment="Left" 
             Margin="23,310,0,0" 
@@ -41,6 +42,7 @@
             Width="62"/>
         
         <Button 
+            Background="Cyan"
             Content="Button" 
             HorizontalAlignment="Center" 
             Margin="0,310,0,0" 
@@ -49,6 +51,7 @@
             Width="62"/>
         
         <Button 
+            Background="LightCyan"
             Content="Button" 
             HorizontalAlignment="Left" 
             Margin="206,310,0,0" 
