@@ -38,5 +38,8 @@ namespace suicide
             aktivni.Content = counter.ToString();
         }
 
+        private void click_plus(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
