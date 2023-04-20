@@ -8,8 +8,32 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterOwner"
         Title="MainWindow" Height="450" Width="300"
-        Background="LightCyan">
+        Background="Aquamarine">
     <Grid>
+        <Label 
+            x:Name="aktivni"
+            BorderBrush="LightCyan"
+            BorderThickness="1"
+            Foreground="Black"
+            Content=""
+            HorizontalAlignment="Center" 
+            Margin="0,25,0,0" 
+            VerticalAlignment="Top" 
+            Height="40" 
+            Width="300"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"/>
+        
+        <Label 
+            x:Name="pasivni"
+            Content="Label" 
+            HorizontalAlignment="Center" 
+            Margin="0,70,0,0" 
+            VerticalAlignment="Top"
+            Width="92"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"/>
+
         <Button 
             Background="Cyan"
             Content="Button" 
@@ -18,43 +42,47 @@
             Click="Button_Click" 
             Height="46" 
             Width="92" 
-            Margin="0,189,0,0"/>
-        <Label 
-            BorderBrush="Black"
-            BorderThickness="1"
-            Foreground="Black"
-            x:Name="pocet"
-            Content="" 
-            HorizontalAlignment="Center" 
-            Margin="0,59,0,0" 
-            VerticalAlignment="Top" 
-            Height="40" 
-            Width="300"
-            VerticalContentAlignment="Center"
-            HorizontalContentAlignment="Center"/>
-        
+            Margin="0,120,0,0"/>
+
         <Button 
-            Content="Save" 
+            Content="+1" 
             HorizontalAlignment="Left" 
-            Margin="33,310,0,0" 
+            Margin="21,217,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
             Width="62"/>
-        
+
         <Button 
-            Content="Save2" 
-            HorizontalAlignment="Center" 
-            Margin="0,310,0,0" 
+            Content="+5" 
+            HorizontalAlignment="Left" 
+            Margin="21,307,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
             Width="62"/>
-        
+
         <Button 
-            Content="Button" 
+            Content="+10" 
             HorizontalAlignment="Left" 
-            Margin="206,310,0,0" 
+            Margin="203,217,0,0" 
             VerticalAlignment="Top" 
             Height="28"
+            Width="62"/>
+
+
+        <Button 
+            Content="+20"   
+            HorizontalAlignment="Left"     
+            Margin="203,307,0,0"    
+            VerticalAlignment="Top"    
+            Height="28" 
+            Width="62"/>
+        
+        <Button 
+            Content="klikl + 1" 
+            HorizontalAlignment="Center" 
+            Margin="0,266,0,0" 
+            VerticalAlignment="Top" 
+            Height="28" 
             Width="62"/>
 
 

@@ -35,7 +35,7 @@ namespace suicide
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             counter++;
-            pocet.Content = counter.ToString();
+            aktivni.Content = counter.ToString();
         }
 
     }
