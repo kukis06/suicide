@@ -8,7 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="axolotl.png" />
+    <None Remove="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg" />
+    <None Remove="pisek.png" />
+    <None Remove="png-clipart-axolotl-facing-front-tiger-salamander-axolotl-animal-pet-creatures-animals-aquarium-thumbnail.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Obrazky\axolotl.png" />
+    <Resource Include="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg" />
+    <Resource Include="pisek.png" />
   </ItemGroup>
 
 </Project>

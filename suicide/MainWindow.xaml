@@ -7,80 +7,110 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterOwner"
-        Title="MainWindow" Height="450" Width="300"
+        Title="MainWindow" Height="450" Width="650"
         Background="Aquamarine">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
         <Label 
             x:Name="aktivni"
             BorderBrush="LightCyan"
-            BorderThickness="1"
-            Foreground="Black"
+            BorderThickness="3"
+            Foreground="White"
             Content=""
-            HorizontalAlignment="Center" 
-            Margin="0,25,0,0" 
+            HorizontalAlignment="Left" 
+            Margin="175,25,0,0" 
             VerticalAlignment="Top" 
-            Height="40" 
+            Height="45" 
             Width="300"
             VerticalContentAlignment="Center"
-            HorizontalContentAlignment="Center"/>
-        
+            HorizontalContentAlignment="Center" Grid.ColumnSpan="2"
+            TextBlock.FontSize="20"
+            />
+
+        <Label Content="Passive:" 
+               HorizontalAlignment="Left" 
+               Margin="274,75,0,0" 
+               VerticalAlignment="Top" 
+               Width="51" 
+               Foreground="White"/>
+
         <Label 
             x:Name="pasivni"
-            Content="Label" 
-            HorizontalAlignment="Center" 
-            Margin="0,70,0,0" 
+            Content="------" 
+            HorizontalAlignment="Left" 
+            Margin="325,75,0,0" 
             VerticalAlignment="Top"
             Width="92"
             VerticalContentAlignment="Center"
-            HorizontalContentAlignment="Center"/>
+            HorizontalContentAlignment="Center" 
+            Foreground="White" 
+            Grid.ColumnSpan="2"/>
 
         <Button 
-            Background="Cyan"
-            Content="Button" 
-            HorizontalAlignment="Center" 
+            BorderThickness="0"
+            x:Name="axolotl"
+            Content="" 
+            HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
             Click="Button_Click" 
-            Height="46" 
-            Width="92" 
-            Margin="0,120,0,0"/>
+            Height="113" 
+            Width="154" 
+            Margin="248,156,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="/Obrazky/axolotl.png"/>
+            </Button.Background>
+        </Button>
 
-        <Button 
-            Content="+1" 
+        <Button
+            Content="+1"
             HorizontalAlignment="Left" 
-            Margin="21,217,0,0" 
+            Margin="31,183,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
-            Width="62"/>
+            Width="110"
+            HorizontalContentAlignment="Center" Foreground="White"
+            >
+            <Button.Background>
+                <ImageBrush ImageSource="/pisek.png"/>
+            </Button.Background>
+        </Button>
 
         <Button 
             Content="+5" 
             HorizontalAlignment="Left" 
-            Margin="21,307,0,0" 
+            Margin="31,231,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
-            Width="62"/>
+            Width="110"/>
 
         <Button 
             Content="+10" 
             HorizontalAlignment="Left" 
-            Margin="203,217,0,0" 
+            Margin="31,280,0,0" 
             VerticalAlignment="Top" 
             Height="28"
-            Width="62"/>
+            Width="110"/>
 
 
         <Button 
             Content="+20"   
             HorizontalAlignment="Left"     
-            Margin="203,307,0,0"    
+            Margin="31,328,0,0"    
             VerticalAlignment="Top"    
             Height="28" 
-            Width="62"/>
-        
+            Width="110"/>
+
         <Button 
+            x:Name="klik1"
             Content="klikl + 1" 
-            HorizontalAlignment="Center" 
-            Margin="0,266,0,0" 
+            HorizontalAlignment="Left" 
+            Margin="294,323,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
             Width="62"

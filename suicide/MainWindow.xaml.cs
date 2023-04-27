@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Data.SQLite;
 using System.Windows.Shapes;
-
+using System.Reflection.Metadata;
 
 namespace suicide
 {
@@ -38,8 +38,9 @@ namespace suicide
             aktivni.Content = counter.ToString();
         }
 
-        private void click_plus(object sender, RoutedEventArgs e)
+        private void click_plus(object sender, RoutedEventArgs e) 
         {
+            
         }
     }
 }
