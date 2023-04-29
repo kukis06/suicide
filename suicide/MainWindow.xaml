@@ -9,7 +9,10 @@
         WindowStartupLocation="CenterOwner"
         Title="MainWindow" Height="450" Width="650"
         Background="Aquamarine">
-    <Grid Background="#FF5F5151">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="63*"/>
             <ColumnDefinition Width="37*"/>
@@ -52,16 +55,19 @@
         <Button 
             BorderThickness="0"
             x:Name="axolotl"
-            Content="Button" 
+            Content="" 
             Foreground="White"
             HorizontalAlignment="Left" 
             VerticalAlignment="Top" 
             Click="Button_Click" 
             Height="113" 
             Width="154" 
-            Margin="248,156,0,0" 
-            Background="#FFA71D1D"
-            FontSize="20"/>
+            Margin="248,156,0,0"
+            FontSize="20">
+            <Button.Background>
+                <ImageBrush ImageSource="/Obrazky/axolotl.png"/>
+            </Button.Background>
+        </Button>
 
         <Button
             Content="+1"
@@ -73,9 +79,12 @@
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center" 
             Foreground="White"
-            FontSize="20" 
-            Background="#FFD03636"
-            />
+            FontSize="20"
+            >
+            <Button.Background>
+                <ImageBrush ImageSource="/pisek.png"/>
+            </Button.Background>
+        </Button>
 
         <Button 
             Content="+5" 

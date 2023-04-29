@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg" />
     <Resource Include="Obrazky\axolotl.png" />
+    <Resource Include="pisek.png" />
   </ItemGroup>
 
 </Project>
