@@ -25,7 +25,47 @@ namespace suicide
     {
         int counter = 0;
         int prvniupgrade = 1;
+        int prvnipassiveupgrade = 1;
 
+        public void minus5counter(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+        }
+        public void minus10counter(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+        }
+        public void minus15counter(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -46,27 +86,42 @@ namespace suicide
                 counter++;
                 aktivni.Content = counter.ToString();
             }
+
+            if (prvniupgrade == 3)
+            {
+                counter++;
+                counter++;
+                counter++;
+                aktivni.Content = counter.ToString();
+            }
         }
 
-        public void minus5counter(object sender, RoutedEventArgs e)
-        {
-            counter--;
-            counter--;
-            counter--;
-            counter--;
-            counter--;
-        }
 
         private void click_plus(object sender, RoutedEventArgs e) 
         {
             if (prvniupgrade == 1 && counter >= 15) 
             {
-                minus5counter(sender, e);
-                minus5counter(sender, e);
-                minus5counter(sender, e);
+                minus15counter(sender, e);
                 prvniupgrade++;
                 aktivni.Content = counter.ToString();
             }
+
+            if (prvniupgrade == 2 && counter >= 60)
+            {
+                minus15counter(sender, e);
+                minus15counter(sender, e);
+                minus10counter(sender, e);
+                minus10counter(sender, e);
+                minus10counter(sender, e);
+                prvniupgrade++;
+                aktivni.Content = counter.ToString();
+            }
+        }
+
+     
+        private void klikplus1pass(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

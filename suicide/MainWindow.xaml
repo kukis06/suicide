@@ -79,7 +79,8 @@
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center" 
             Foreground="White"
-            FontSize="20"
+            FontSize="20" Click="klikplus1pass"
+            
             >
             <Button.Background>
                 <ImageBrush ImageSource="/pisek.png"/>
@@ -112,15 +113,14 @@
             Width="110"/>
 
         <Button 
+            Click="click_plus"
             x:Name="klik1"
             Content="klikl + 1" 
             HorizontalAlignment="Left" 
             Margin="294,323,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
-            Width="62"
-            Click="click_plus"/>
-
+            Width="62"/>
 
     </Grid>
 </Window>
