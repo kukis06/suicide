@@ -13,10 +13,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg"/>
         </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="63*"/>
-            <ColumnDefinition Width="37*"/>
-        </Grid.ColumnDefinitions>
+
         <Label 
             x:Name="aktivni"
             BorderBrush="LightCyan"
@@ -29,7 +26,7 @@
             Height="45" 
             Width="300"
             VerticalContentAlignment="Center"
-            HorizontalContentAlignment="Center" Grid.ColumnSpan="2"
+            HorizontalContentAlignment="Center"
             TextBlock.FontSize="20"
             />
 
@@ -70,7 +67,8 @@
         </Button>
 
         <Button
-            Content="+1"
+            Content="Písek    +1"
+            Click="klikplus1pass" 
             HorizontalAlignment="Left" 
             Margin="31,183,0,0" 
             VerticalAlignment="Top" 
@@ -78,22 +76,28 @@
             Width="110"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center" 
-            Foreground="White"
-            FontSize="20" Click="klikplus1pass"
-            
-            >
+            FontSize="20"
+            Foreground="White">
+
+
             <Button.Background>
                 <ImageBrush ImageSource="/pisek.png"/>
             </Button.Background>
         </Button>
 
         <Button 
-            Content="+5" 
+            Content="modrý kamení +5"
             HorizontalAlignment="Left" 
             Margin="31,231,0,0" 
             VerticalAlignment="Top" 
             Height="28" 
-            Width="110"/>
+            Width="110"
+            FontSize="13" Foreground="White">
+            
+            <Button.Background>
+                <ImageBrush ImageSource="/Obrazky/mdrkameny.jpg"/>
+            </Button.Background>
+        </Button>
 
         <Button 
             Content="+10" 

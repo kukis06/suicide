@@ -27,6 +27,8 @@ namespace suicide
         int prvniupgrade = 1;
         int prvnipassiveupgrade = 1;
 
+        int test = 1;
+
         public void minus5counter(object sender, RoutedEventArgs e)
         {
             counter--;
@@ -66,6 +68,29 @@ namespace suicide
             counter--;
             counter--;
         }
+        public void minus20counter(object sender, RoutedEventArgs e)
+        {
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+            counter--;
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -74,26 +99,55 @@ namespace suicide
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(prvniupgrade == 1) 
+            //if (prvniupgrade == 1)
+            //{
+            //    counter++;
+            //    aktivni.Content = counter.ToString();
+            //}
+
+            //if (prvniupgrade == 2)
+            //{
+            //    counter++;
+            //    counter++;
+            //    aktivni.Content = counter.ToString();
+            //}
+
+            //if (prvniupgrade == 3)
+            //{
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    aktivni.Content = counter.ToString();
+            //}
+
+            //if (prvniupgrade == 4)
+            //{
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    aktivni.Content = counter.ToString();
+            //}
+
+            //if (prvniupgrade == 5)
+            //{
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    counter++;
+            //    aktivni.Content = counter.ToString();
+            //}
+
+            if (prvniupgrade == test)
             {
+                test = test + 1;
                 counter++;
+                prvniupgrade++;
                 aktivni.Content = counter.ToString();
             }
 
-            if(prvniupgrade == 2)
-            {
-                counter++;
-                counter++;
-                aktivni.Content = counter.ToString();
-            }
 
-            if (prvniupgrade == 3)
-            {
-                counter++;
-                counter++;
-                counter++;
-                aktivni.Content = counter.ToString();
-            }
         }
 
 
@@ -106,13 +160,31 @@ namespace suicide
                 aktivni.Content = counter.ToString();
             }
 
-            if (prvniupgrade == 2 && counter >= 60)
+            if (prvniupgrade == 2 && counter >= 30)
             {
                 minus15counter(sender, e);
                 minus15counter(sender, e);
-                minus10counter(sender, e);
-                minus10counter(sender, e);
-                minus10counter(sender, e);
+                prvniupgrade++;
+                aktivni.Content = counter.ToString();
+            }
+
+            if (prvniupgrade == 3 && counter >= 60)
+            {
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                prvniupgrade++;
+                aktivni.Content = counter.ToString();
+            }
+
+            if (prvniupgrade == 4 && counter >= 120)
+            {
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                minus20counter(sender, e);
+                minus20counter(sender, e);
                 prvniupgrade++;
                 aktivni.Content = counter.ToString();
             }
