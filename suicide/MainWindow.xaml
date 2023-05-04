@@ -11,7 +11,7 @@
         Background="Aquamarine">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg"/>
+            <ImageBrush ImageSource="/Obrazky/Axolotlrun/bgr.jpg"/>
         </Grid.Background>
 
         <Label 
@@ -62,7 +62,7 @@
             Margin="248,156,0,0"
             FontSize="20">
             <Button.Background>
-                <ImageBrush ImageSource="/Obrazky/axolotl.png"/>
+                <ImageBrush ImageSource="/Obrazky/Axolotlrun/axolotl.png"/>
             </Button.Background>
         </Button>
 
@@ -95,7 +95,7 @@
             FontSize="13" Foreground="White">
             
             <Button.Background>
-                <ImageBrush ImageSource="/Obrazky/mdrkameny.jpg"/>
+                <ImageBrush ImageSource="/Obrazky/Axolotlrun/mdrkameny.jpg"/>
             </Button.Background>
         </Button>
 
