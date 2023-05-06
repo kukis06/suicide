@@ -99,53 +99,53 @@ namespace suicide
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            //if (prvniupgrade == 1)
-            //{
-            //    counter++;
-            //    aktivni.Content = counter.ToString();
-            //}
-
-            //if (prvniupgrade == 2)
-            //{
-            //    counter++;
-            //    counter++;
-            //    aktivni.Content = counter.ToString();
-            //}
-
-            //if (prvniupgrade == 3)
-            //{
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    aktivni.Content = counter.ToString();
-            //}
-
-            //if (prvniupgrade == 4)
-            //{
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    aktivni.Content = counter.ToString();
-            //}
-
-            //if (prvniupgrade == 5)
-            //{
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    counter++;
-            //    aktivni.Content = counter.ToString();
-            //}
-
-            if (prvniupgrade == test)
+            if (prvniupgrade == 1)
             {
-                test = test + 1;
                 counter++;
-                prvniupgrade++;
                 aktivni.Content = counter.ToString();
             }
+
+            if (prvniupgrade == 2)
+            {
+                counter++;
+                counter++;
+                aktivni.Content = counter.ToString();
+            }
+
+            if (prvniupgrade == 3)
+            {
+                counter++;
+                counter++;
+                counter++;
+                aktivni.Content = counter.ToString();
+            }
+
+            if (prvniupgrade == 4)
+            {
+                counter++;
+                counter++;
+                counter++;
+                counter++;
+                aktivni.Content = counter.ToString();
+            }
+
+            if (prvniupgrade == 5)
+            {
+                counter++;
+                counter++;
+                counter++;
+                counter++;
+                counter++;
+                aktivni.Content = counter.ToString();
+            }
+
+            //if (prvniupgrade == test)
+            //{
+            //    test = test + 1;
+            //    counter++;
+            //    prvniupgrade++;
+            //    aktivni.Content = counter.ToString();
+            //}
 
 
         }

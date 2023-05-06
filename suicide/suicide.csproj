@@ -8,12 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="axolotl.png" />
+    <None Remove="activelavazone.jpg" />
+    <None Remove="bgr.jpg" />
+    <None Remove="GrassyPlateaus.jpg" />
+    <None Remove="JellyshroomCave.jpg" />
+    <None Remove="kelpforest.jpg" />
+    <None Remove="lebka.jpg" />
     <None Remove="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg" />
     <None Remove="mdrkameny.jpg" />
+    <None Remove="Obrazky\Axolotlrun\bgr.jpg" />
     <None Remove="Obrazky\mdrkameny.jpg" />
     <None Remove="pisek.png" />
     <None Remove="png-clipart-axolotl-facing-front-tiger-salamander-axolotl-animal-pet-creatures-animals-aquarium-thumbnail.png" />
+    <None Remove="Ryley Robinson.png" />
+    <None Remove="SafeShallows.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,9 +29,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="GrassyPlateaus.jpg" />
+    <Resource Include="JellyshroomCave.jpg" />
+    <Resource Include="kelpforest.jpg" />
+    <Resource Include="Obrazky\Subnautica\activelavazone.jpg" />
+    <Resource Include="Obrazky\Axolotlrun\kelpforest.jpg" />
+    <Resource Include="Obrazky\Axolotlrun\lebka.jpg" />
     <Resource Include="Obrazky\Axolotlrun\axolotl.png" />
+    <Resource Include="Obrazky\Axolotlrun\bgr.jpg" />
     <Resource Include="Obrazky\Axolotlrun\mdrkameny.jpg" />
     <Resource Include="Obrazky\Axolotlrun\pisek.png" />
+    <Resource Include="Obrazky\Subnautica\Ryley Robinson.png" />
+    <Resource Include="SafeShallows.jpg" />
   </ItemGroup>
 
 </Project>
