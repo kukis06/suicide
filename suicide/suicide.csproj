@@ -8,20 +8,59 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="activelavazone.jpg" />
+    <None Remove="ActiveLavaZone.jpg" />
+    <None Remove="axolotl.png" />
     <None Remove="bgr.jpg" />
+    <None Remove="BloodCelp.jpg" />
+    <None Remove="BulbZone.jpg" />
+    <None Remove="CragField.jpg" />
+    <None Remove="CrashZone.jpg" />
+    <None Remove="Dunes.jpg" />
+    <None Remove="GhostTree.jpg" />
+    <None Remove="GrandReef.jpg" />
     <None Remove="GrassyPlateaus.jpg" />
+    <None Remove="InActiveLavaZone.jpg" />
     <None Remove="JellyshroomCave.jpg" />
-    <None Remove="kelpforest.jpg" />
+    <None Remove="KelpForest.jpg" />
     <None Remove="lebka.jpg" />
+    <None Remove="LostRiver.jpg" />
     <None Remove="main-qimg-6ad5ff977715c26d2a1b0d14136a3e3b-lq.jpg" />
     <None Remove="mdrkameny.jpg" />
+    <None Remove="Mountains.jpg" />
+    <None Remove="mushroom forest.jpg" />
+    <None Remove="Obrazky\Axolotlrun\axolotl.png" />
     <None Remove="Obrazky\Axolotlrun\bgr.jpg" />
+    <None Remove="Obrazky\Axolotlrun\lebka.jpg" />
+    <None Remove="Obrazky\Axolotlrun\mdrkameny.jpg" />
+    <None Remove="Obrazky\Axolotlrun\pisek.png" />
     <None Remove="Obrazky\mdrkameny.jpg" />
+    <None Remove="Obrazky\Subnautica\ActiveLavaZone.jpg" />
+    <None Remove="Obrazky\Subnautica\BloodCelp.jpg" />
+    <None Remove="Obrazky\Subnautica\BulbZone.jpg" />
+    <None Remove="Obrazky\Subnautica\CragField.jpg" />
+    <None Remove="Obrazky\Subnautica\CrashZone.jpg" />
+    <None Remove="Obrazky\Subnautica\Dunes.jpg" />
+    <None Remove="Obrazky\Subnautica\GhostTree.jpg" />
+    <None Remove="Obrazky\Subnautica\GrandReef.jpg" />
+    <None Remove="Obrazky\Subnautica\GrassyPlateaus.jpg" />
+    <None Remove="Obrazky\Subnautica\InActiveLavaZone.jpg" />
+    <None Remove="Obrazky\Subnautica\JellyshroomCave.jpg" />
+    <None Remove="Obrazky\Subnautica\KelpForest.jpg" />
+    <None Remove="Obrazky\Subnautica\LostRiver.jpg" />
+    <None Remove="Obrazky\Subnautica\Mountains.jpg" />
+    <None Remove="Obrazky\Subnautica\mushroom forest.jpg" />
+    <None Remove="Obrazky\Subnautica\Ryley Robinson.png" />
+    <None Remove="Obrazky\Subnautica\SafeShallows.jpg" />
+    <None Remove="Obrazky\Subnautica\SeaTradersPath.jpg" />
+    <None Remove="Obrazky\Subnautica\SparseReef.jpg" />
+    <None Remove="Obrazky\Subnautica\UnderwaterIsland.jpg" />
     <None Remove="pisek.png" />
     <None Remove="png-clipart-axolotl-facing-front-tiger-salamander-axolotl-animal-pet-creatures-animals-aquarium-thumbnail.png" />
     <None Remove="Ryley Robinson.png" />
     <None Remove="SafeShallows.jpg" />
+    <None Remove="SeaTradersPath.jpg" />
+    <None Remove="SparseReef.jpg" />
+    <None Remove="UnderwaterIsland.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,18 +68,32 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="GrassyPlateaus.jpg" />
-    <Resource Include="JellyshroomCave.jpg" />
-    <Resource Include="kelpforest.jpg" />
-    <Resource Include="Obrazky\Subnautica\activelavazone.jpg" />
-    <Resource Include="Obrazky\Axolotlrun\kelpforest.jpg" />
-    <Resource Include="Obrazky\Axolotlrun\lebka.jpg" />
+    <Resource Include="Obrazky\Subnautica\ActiveLavaZone.jpg" />
+    <Resource Include="Obrazky\Subnautica\KelpForest.jpg" />
     <Resource Include="Obrazky\Axolotlrun\axolotl.png" />
     <Resource Include="Obrazky\Axolotlrun\bgr.jpg" />
+    <Resource Include="Obrazky\Axolotlrun\lebka.jpg" />
     <Resource Include="Obrazky\Axolotlrun\mdrkameny.jpg" />
     <Resource Include="Obrazky\Axolotlrun\pisek.png" />
+    <Resource Include="Obrazky\Subnautica\BloodCelp.jpg" />
+    <Resource Include="Obrazky\Subnautica\BulbZone.jpg" />
+    <Resource Include="Obrazky\Subnautica\CragField.jpg" />
+    <Resource Include="Obrazky\Subnautica\CrashZone.jpg" />
+    <Resource Include="Obrazky\Subnautica\Dunes.jpg" />
+    <Resource Include="Obrazky\Subnautica\GhostTree.jpg" />
+    <Resource Include="Obrazky\Subnautica\GrandReef.jpg" />
+    <Resource Include="Obrazky\Subnautica\GrassyPlateaus.jpg" />
+    <Resource Include="Obrazky\Subnautica\InActiveLavaZone.jpg" />
+    <Resource Include="Obrazky\Subnautica\JellyshroomCave.jpg" />
+    <Resource Include="Obrazky\Axolotlrun\KelpForest.jpg" />
+    <Resource Include="Obrazky\Subnautica\LostRiver.jpg" />
+    <Resource Include="Obrazky\Subnautica\Mountains.jpg" />
+    <Resource Include="Obrazky\Subnautica\mushroom forest.jpg" />
     <Resource Include="Obrazky\Subnautica\Ryley Robinson.png" />
-    <Resource Include="SafeShallows.jpg" />
+    <Resource Include="Obrazky\Subnautica\SafeShallows.jpg" />
+    <Resource Include="Obrazky\Subnautica\SeaTradersPath.jpg" />
+    <Resource Include="Obrazky\Subnautica\SparseReef.jpg" />
+    <Resource Include="Obrazky\Subnautica\UnderwaterIsland.jpg" />
   </ItemGroup>
 
 </Project>
