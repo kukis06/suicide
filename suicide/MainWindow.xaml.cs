@@ -20,6 +20,7 @@ using System.Windows.Threading;
 using System.Diagnostics.Metrics;
 using System.Diagnostics;
 using System.Security.AccessControl;
+using System.IO;
 
 namespace suicide
 {
@@ -62,18 +63,23 @@ namespace suicide
             Mouseclick = (Mouseclick * 2);
         }
 
-
-
-
-
-
-
-
         private void Upgrade(object sender, RoutedEventArgs e)
         {
             Upgrady Upgrades = new Upgrady();
             Upgrades.Show();
         }
+
+
+
+
+        private void Save(object sender, EventArgs e)
+        {
+            TextWriter txt = new StreamWriter("C:\\Users\\Petr\\source\\repos\\kukis06\\suicide\\suicide\\bin\\Debug\\net6.0-windows\\Save.txt");
+            txt.Write(aktivni.Content);
+            txt.Close();
+        }
+
+
 
         private void klikplus1pass(object sender, RoutedEventArgs e)
         {
@@ -261,7 +267,6 @@ namespace suicide
                 endgamos.Show();
             }
         }
-
 
 
     }  

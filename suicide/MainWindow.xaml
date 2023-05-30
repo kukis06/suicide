@@ -14,6 +14,24 @@
             <ImageBrush ImageSource="/Obrazky/Subnautica/GhostTree.jpg"/>
         </Grid.Background>
 
+        <Label 
+            Content="Absolutely not an unbalnanced piece of suicide material"
+            Margin="310,31,0,0" 
+            VerticalAlignment="Top"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"
+            TextBlock.FontSize="20" 
+            TextBlock.FontFamily="Verdana Pro Black"
+            HorizontalAlignment="Left"
+            Foreground="#FFB5F5E8"/>
+
+        <Button Content="Save" 
+                HorizontalAlignment="Center" 
+                Margin="0,584,0,0" 
+                VerticalAlignment="Top" Height="32" Width="64" Click="Save"/>
+
+
+
         <Button 
             Content="Upgrades" 
             HorizontalAlignment="Center" 
@@ -30,8 +48,8 @@
             BorderBrush="#00ffcc"
             BorderThickness="6"
             Foreground="#00ffcc"
-            Margin="0,0,0,529" 
-            VerticalAlignment="Bottom" 
+            Margin="0,87,0,0" 
+            VerticalAlignment="Top" 
             Height="48"
             Width="512"
             VerticalContentAlignment="Center"
@@ -41,32 +59,6 @@
             HorizontalAlignment="Center" 
             />
 
-        <Label Content="Passive:" 
-               HorizontalAlignment="Left" 
-               Margin="480,0,0,494" 
-               VerticalAlignment="Bottom"
-               VerticalContentAlignment="Top"
-               HorizontalContentAlignment="Center"
-               FontSize="20" 
-               TextBlock.FontFamily="Verdana Pro Black"
-               Width="115" 
-               Foreground="#00ffcc" Height="33"
-               RenderTransformOrigin="0.5,0.5">
-          
-        </Label>
-
-        <Label 
-            x:Name="pasivni"
-            Margin="595,0,0,500" 
-            TextBlock.FontFamily="Verdana Pro Black"
-            TextBlock.FontSize="20"
-            VerticalAlignment="Bottom"
-            VerticalContentAlignment="Center"
-            HorizontalContentAlignment="Center" 
-            Foreground="#00ffcc" 
-            HorizontalAlignment="Left" 
-            Width="271" RenderTransformOrigin="0.5,0.5" Height="29">
-        </Label>
 
         <Button 
             BorderThickness="0"
@@ -76,7 +68,7 @@
             Click="Button_Click" 
             Height="142"
             FontSize="20" 
-            Margin="519,208,0,0" 
+            Margin="520,179,0,0" 
             HorizontalAlignment="Left" 
             Width="226">
             <Button.Background>
@@ -529,13 +521,13 @@
         <Button 
             Click="click_plus"
             x:Name="klik1"
-            Content="klikl + 1" 
+            Content="click upgrade" 
             HorizontalAlignment="Center" 
-            Margin="0,401,0,0" 
+            Margin="0,408,0,0" 
             VerticalAlignment="Top" 
-            Height="41"
+            Height="35"
             FontSize="17"
-            Width="90" 
+            Width="148" 
             TextBlock.FontFamily="Verdana Pro Black"
             Background="#FF2F72F7" Foreground="White"/>
 
