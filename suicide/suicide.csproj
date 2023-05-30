@@ -49,6 +49,7 @@
     <None Remove="Obrazky\Subnautica\LostRiver.jpg" />
     <None Remove="Obrazky\Subnautica\Mountains.jpg" />
     <None Remove="Obrazky\Subnautica\mushroom forest.jpg" />
+    <None Remove="Obrazky\Subnautica\Ryley Robinson.jpg" />
     <None Remove="Obrazky\Subnautica\Ryley Robinson.png" />
     <None Remove="Obrazky\Subnautica\SafeShallows.jpg" />
     <None Remove="Obrazky\Subnautica\SeaTradersPath.jpg" />
@@ -89,7 +90,7 @@
     <Resource Include="Obrazky\Subnautica\LostRiver.jpg" />
     <Resource Include="Obrazky\Subnautica\Mountains.jpg" />
     <Resource Include="Obrazky\Subnautica\mushroom forest.jpg" />
-    <Resource Include="Obrazky\Subnautica\Ryley Robinson.png" />
+    <Resource Include="Obrazky\Subnautica\Ryley Robinson.jpg" />
     <Resource Include="Obrazky\Subnautica\SafeShallows.jpg" />
     <Resource Include="Obrazky\Subnautica\SeaTradersPath.jpg" />
     <Resource Include="Obrazky\Subnautica\SparseReef.jpg" />

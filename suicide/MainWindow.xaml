@@ -22,7 +22,8 @@
             Height="40" Width="90"
             Foreground="#DAA520"
             TextBlock.FontSize="15" 
-            TextBlock.FontFamily="Verdana Pro Black" Click="Upgrade"/>
+            TextBlock.FontFamily="Verdana Pro Black" 
+            Click="Upgrade"/>
 
         <Label 
             x:Name="aktivni"
@@ -42,7 +43,7 @@
 
         <Label Content="Passive:" 
                HorizontalAlignment="Left" 
-               Margin="480,0,0,492" 
+               Margin="480,0,0,494" 
                VerticalAlignment="Bottom"
                VerticalContentAlignment="Top"
                HorizontalContentAlignment="Center"
@@ -51,20 +52,12 @@
                Width="115" 
                Foreground="#00ffcc" Height="33"
                RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.503"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-0.158"/>
-                </TransformGroup>
-            </Label.RenderTransform>
+          
         </Label>
 
         <Label 
             x:Name="pasivni"
-            Content="------" 
-            Margin="594,0,0,490" 
+            Margin="595,0,0,500" 
             TextBlock.FontFamily="Verdana Pro Black"
             TextBlock.FontSize="20"
             VerticalAlignment="Bottom"
@@ -72,7 +65,8 @@
             HorizontalContentAlignment="Center" 
             Foreground="#00ffcc" 
             HorizontalAlignment="Left" 
-            Width="150"/>
+            Width="271" RenderTransformOrigin="0.5,0.5" Height="29">
+        </Label>
 
         <Button 
             BorderThickness="0"
@@ -80,19 +74,27 @@
             Foreground="White" 
             VerticalAlignment="Top" 
             Click="Button_Click" 
-            Height="166"
+            Height="142"
             FontSize="20" 
-            Margin="518,193,0,0" 
+            Margin="519,208,0,0" 
             HorizontalAlignment="Left" 
-            Width="226" Background="{x:Null}">
-            <Image Source="/Obrazky/Subnautica/Ryley Robinson.png"/>
+            Width="226">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Source="/Obrazky/Subnautica/Ryley Robinson.jpg" Height="141">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/Obrazky/Subnautica/Ryley Robinson.jpg"/>
+                </Image.OpacityMask>
+            </Image>
         </Button>
 
 
 
         <Button
+            x:Name="safeshallows"
             Content="Safe Shallows"
-            Click="clickAuto1" 
+            Click="klikplus1pass" 
             HorizontalAlignment="Right" 
             Margin="0,0,1060,479" 
             VerticalAlignment="Bottom" 
@@ -531,8 +533,11 @@
             HorizontalAlignment="Center" 
             Margin="0,401,0,0" 
             VerticalAlignment="Top" 
-            Height="28" 
-            Width="62"/>
+            Height="41"
+            FontSize="17"
+            Width="90" 
+            TextBlock.FontFamily="Verdana Pro Black"
+            Background="#FF2F72F7" Foreground="White"/>
 
 
 
