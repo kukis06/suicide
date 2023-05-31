@@ -42,6 +42,7 @@ namespace suicide
             timer.Tick += clickAuto;
             timer.Start();
 
+
         }
         private void clickAuto(object sender, EventArgs e)
         {
