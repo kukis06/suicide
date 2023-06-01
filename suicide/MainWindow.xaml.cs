@@ -75,9 +75,16 @@ namespace suicide
 
         private void Save(object sender, EventArgs e)
         {
+            if (true)
+            {
             TextWriter txt = new StreamWriter("C:\\Users\\Petr\\source\\repos\\kukis06\\suicide\\suicide\\bin\\Debug\\net6.0-windows\\Save.txt");
             txt.Write(aktivni.Content);
             txt.Close();
+            }
+            else
+            {
+
+            }
         }
 
 
