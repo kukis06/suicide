@@ -15,27 +15,31 @@
         </Grid.Background>
 
         <Label 
-            Content="Absolutely not an unbalnanced piece of suicide material"
-            Margin="310,31,0,0" 
+            Content="Absolutely balnanced piece of suicide material"
+            Margin="0,31,0,0" 
             VerticalAlignment="Top"
             VerticalContentAlignment="Center"
             HorizontalContentAlignment="Center"
             TextBlock.FontSize="20" 
             TextBlock.FontFamily="Verdana Pro Black"
-            HorizontalAlignment="Left"
-            Foreground="#FFB5F5E8"/>
+            HorizontalAlignment="Center"
+            Foreground="#FF00EAEF"/>
 
         <Button Content="Save" 
                 HorizontalAlignment="Left" 
                 Margin="536,584,0,0" 
                 VerticalAlignment="Top" 
-                Height="32" Width="64" Click="Save"/>
+                Height="32" Width="64" Click="Save" 
+                Background="#FF19519C" Foreground="White"
+                TextBlock.FontFamily="Verdana Pro Black"/>
 
         <Button Content="Restore" 
                 HorizontalAlignment="Left" 
                 Margin="620,584,0,0" 
                 VerticalAlignment="Top"
-                Height="32" Width="64" Click="restore"/>
+                Height="32" Width="64" Click="restore" 
+                Background="#FF19519C" Foreground="White"
+                TextBlock.FontFamily="Verdana Pro Black"/>
 
 
 
