@@ -21,6 +21,10 @@ using System.Diagnostics.Metrics;
 using System.Diagnostics;
 using System.Security.AccessControl;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Xml.Serialization;
+using System.Xml;
+using static suicide.MainWindow;
 
 namespace suicide
 {
@@ -29,13 +33,14 @@ namespace suicide
     /// </summary>
     public partial class MainWindow : Window
     {
-        Int64 counter = 0;
-        Int64 Mouseclick = 1;
-        public Int32 passive = 0;
 
+        string cesta = "saveFile.xml";
+
+        Promenny promenny;
         public MainWindow()
         {
             InitializeComponent();
+            promenny = new Promenny();
 
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -46,22 +51,22 @@ namespace suicide
         }
         private void clickAuto(object sender, EventArgs e)
         {
-            aktivni.Content = counter.ToString();
-            counter += passive;
-            Debug.WriteLine(counter + "+" + passive + "+" + Mouseclick);
+            aktivni.Content = promenny.Counter.ToString();
+            promenny.Counter += promenny.Passive;
+            Debug.WriteLine(promenny.Counter + "+" + promenny.Passive + "+" + promenny.Mouseclick1);
         }
 
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
-            counter += Mouseclick;
-            aktivni.Content = counter.ToString();
+            promenny.Counter += promenny.Mouseclick1;
+            aktivni.Content = promenny.Counter.ToString();
         }
 
 
         private void click_plus(object sender, RoutedEventArgs e)
         {
-            Mouseclick = (Mouseclick * 2);
+            promenny.Mouseclick1 = (promenny.Mouseclick1 * 2);
         }
 
         private void Upgrade(object sender, RoutedEventArgs e)
@@ -70,212 +75,242 @@ namespace suicide
             Upgrades.Show();
         }
 
+        public class Promenny
+        {
+            Int64 counter = 0;
+            Int64 Mouseclick = 1;
+            Int64 passive = 0;
 
+            public long Counter { get => counter; set => counter = value; }
+            public long Mouseclick1 { get => Mouseclick; set => Mouseclick = value; }
+            public int Passive { get => (int)passive; set => passive = value; }
+        }
 
 
         private void Save(object sender, EventArgs e)
         {
-            if (true)
+            SaveData();
+            void SaveData()
             {
-            TextWriter txt = new StreamWriter("C:\\Users\\Petr\\source\\repos\\kukis06\\suicide\\suicide\\bin\\Debug\\net6.0-windows\\Save.txt");
-            txt.Write(aktivni.Content);
-            txt.Close();
+                XmlSerializer serializer = new XmlSerializer(promenny.GetType());
+                using (StreamWriter sw = new StreamWriter(cesta))
+                {
+                    serializer.Serialize(sw, promenny);
+                }
             }
-            else
-            {
 
+        }
+        private void restore(object sender, RoutedEventArgs e)
+        {
+            RestoreData();
+            void RestoreData()
+            {
+                XmlSerializer serializer = new XmlSerializer(promenny.GetType());
+                if (File.Exists(cesta))
+                {
+                    using (StreamReader sr = new StreamReader(cesta))
+                    {
+                        promenny = (Promenny)serializer.Deserialize(sr);
+                    }
+
+                }
+                //error message, no saveFile.xml detected
+                else
+                {
+                    MessageBox.Show("cesta nelze najit", "Error");
+                }
             }
         }
 
 
 
+        #region steal
         private void klikplus1pass(object sender, RoutedEventArgs e)
         {
-            if(counter >= 100)
+            if(promenny.Counter >= 100)
             {
-                counter -= 100;
-                passive++;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 100;
+                promenny.Passive++;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus5pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 170)
+            if (promenny.Counter >= 170)
             {
-                counter -= 170;
-                passive+= 5;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 170;
+                promenny.Passive += 5;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
         private void klikplus10pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 289)
+            if (promenny.Counter >= 289)
             {
-                counter -= 289;
-                passive += 10;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 289;
+                promenny.Passive += 10;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus20pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 491) 
-            { 
-                counter -= 491;
-                passive += 20;
-                aktivni.Content = counter.ToString();
+            if (promenny.Counter >= 491) 
+            {
+                promenny.Counter -= 491;
+                promenny.Passive += 20;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus40pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 835) 
-            { 
-                counter -= 835;
-                passive += 40;
-                aktivni.Content = counter.ToString();
+            if (promenny.Counter >= 835) 
+            {
+                promenny.Counter -= 835;
+                promenny.Passive += 40;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus80pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 1420) 
-            { 
-                counter -= 1420;
-                passive += 80;
-                aktivni.Content = counter.ToString();
+            if (promenny.Counter >= 1420) 
+            {
+                promenny.Passive += 80;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus160pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 2414) 
+            if (promenny.Counter >= 2414)
             {
-                counter -= 2414;
-                passive += 160;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 2414;
+                promenny.Passive += 160;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus320pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 4103) 
+            if (promenny.Counter >= 4103)
             {
-                counter -= 4103;
-                passive +=320;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 4103;
+                promenny.Passive +=320;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
         private void klikplus640pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 6976) 
-            { 
-                counter -= 6976;
-                passive += 640;
-                aktivni.Content = counter.ToString();
+            if (promenny.Counter >= 6976) 
+            {
+                promenny.Counter -= 6976;
+                promenny.Passive += 640;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus1280pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 11859)
+            if (promenny.Counter >= 11859)
             {
-                counter -= 11859;
-                passive += 1280;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 11859;
+                promenny.Passive += 1280;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus2560pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 20160)
+            if (promenny.Counter >= 20160)
             {
-                counter -= 20160;
-                passive += 2560;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 20160;
+                promenny.Passive += 2560;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus5120pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 34272)
+            if (promenny.Counter >= 34272)
             {
-                counter -= 34272;
-                passive += 5120;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 34272;
+                promenny.Passive += 5120;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus10240pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 58262)
+            if (promenny.Counter >= 58262)
             {
-                counter -= 58262;
-                passive += 10240;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 58262;
+                promenny.Passive += 10240;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus20480pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 99046)
+            if (promenny.Counter >= 99046)
             {
-                counter -= 99046;
-                passive += 20480;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 99046;
+                promenny.Passive += 20480;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus40960pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 168378)
+            if (promenny.Counter >= 168378)
             {
-                counter -= 168378;
-                passive += 40960;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 168378;
+                promenny.Passive += 40960;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus81920pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 286242)
+            if (promenny.Counter >= 286242)
             {
-                counter -= 286242;
-                passive += 81920;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 286242;
+                promenny.Passive += 81920;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus163840pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 486612)
+            if (promenny.Counter >= 486612)
             {
-                counter -= 486612;
-                passive += 163840;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 486612;
+                promenny.Passive += 163840;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
 
         private void klikplus327680pass(object sender, RoutedEventArgs e)
         {
-            if (counter >= 827240)
+            if (promenny.Counter >= 827240)
             {
-                counter -= 827240;
-                passive += 327680;
-                aktivni.Content = counter.ToString();
+                promenny.Counter -= 827240;
+                promenny.Passive += 327680;
+                aktivni.Content = promenny.Counter.ToString();
             }
         }
+        #endregion steal
 
         void endgame(object sender, EventArgs e)
         {
-            if (counter >= 1000000000000000000) //milion
+            if (promenny.Counter >= 1000000000000000000) //milion
             {
                 Endgamos endgamos = new Endgamos();
                 endgamos.Show();
             }
         }
-
 
     }  
 }

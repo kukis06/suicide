@@ -26,9 +26,16 @@
             Foreground="#FFB5F5E8"/>
 
         <Button Content="Save" 
-                HorizontalAlignment="Center" 
-                Margin="0,584,0,0" 
-                VerticalAlignment="Top" Height="32" Width="64" Click="Save"/>
+                HorizontalAlignment="Left" 
+                Margin="536,584,0,0" 
+                VerticalAlignment="Top" 
+                Height="32" Width="64" Click="Save"/>
+
+        <Button Content="Restore" 
+                HorizontalAlignment="Left" 
+                Margin="620,584,0,0" 
+                VerticalAlignment="Top"
+                Height="32" Width="64" Click="restore"/>
 
 
 
